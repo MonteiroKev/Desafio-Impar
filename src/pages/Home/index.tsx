@@ -1,4 +1,4 @@
-import { ExcluirCard } from "../../components/ExcluirCard";
+import { AddCard } from "../../components/AddCard";
 
 import { Header } from "../../components/Header";
 import { CardList, MainContainer } from "./style";
@@ -8,13 +8,12 @@ export function Home() {
     <>
       <Header />
       <MainContainer>
+        <AddCard />
         <div className="flex align-center titulo-principal">
           <h1>Resultado de busca</h1>
           <button>Novo Card</button>
         </div>
-        <CardList>
-          <ExcluirCard />
-        </CardList>
+        <CardList></CardList>
       </MainContainer>
     </>
   );

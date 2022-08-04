@@ -3,7 +3,7 @@ import {
   ContainerButton,
   ContainerClose,
   ContainerExclude,
-  ContainerImg
+  ContainerImg,
 } from "./style";
 
 export function ExcluirCard() {
