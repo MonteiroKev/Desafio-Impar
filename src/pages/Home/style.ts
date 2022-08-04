@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const MainContainer = styled.div`
@@ -28,9 +29,12 @@ export const MainContainer = styled.div`
     }
   }
 `;
-
 export const CardList = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+`;
+
+export const MotionContainer = styled(motion.div)`
+
 `;

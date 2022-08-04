@@ -44,5 +44,10 @@ export const ButtonContainer = styled.div`
     font-size: 0.93rem;
     color: #263238;
     gap: 0.73rem;
+    cursor: pointer;
+
+    &:hover {
+      color: red;
+    }
   }
 `;
