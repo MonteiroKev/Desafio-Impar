@@ -1,16 +1,24 @@
 import { Trash, XCircle } from "phosphor-react";
-import { ContainerButton, ContainerExclude, ContainerImg } from "./style";
+import {
+  ContainerButton,
+  ContainerClose,
+  ContainerExclude,
+  ContainerImg
+} from "./style";
 
 export function ExcluirCard() {
   return (
     <ContainerExclude>
-      <XCircle size={32} weight="fill" />
+      <ContainerClose>
+        <XCircle size={45} weight="fill" />
+      </ContainerClose>
+
       <ContainerImg>
         <Trash />
       </ContainerImg>
 
-      <h2>Exluir</h2>
-      <small>CERTEZA QUE DESEJA EXCLUIR</small>
+      <h2>Excluir</h2>
+      <p>CERTEZA QUE DESEJA EXCLUIR?</p>
       <ContainerButton>
         <button>Excluir</button>
         <button>Cancelar</button>

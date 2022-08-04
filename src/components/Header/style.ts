@@ -10,12 +10,14 @@ export const HeaderContainer = styled.header`
   justify-content: flex-start;
   padding-left: 1.5rem;
   box-shadow: 0px 3px 6px #00000029;
+  max-width: 90rem;
 `;
 
 export const SectionContainer = styled.div`
   background: url(${background});
   min-height: 16.31rem;
   margin: 0 auto;
+  max-width: 90rem;
 `;
 
 export const InputContainer = styled.div`

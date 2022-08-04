@@ -15,9 +15,20 @@ export const ContainerExclude = styled.div`
     margin-bottom: 0.81rem;
   }
 
-  small {
+  p {
     font-weight: bold;
+    font-size: 0.75rem;
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 1.75rem;
+    max-width: 22.5rem;
+    margin: 0 auto;
   }
+`;
+
+export const ContainerClose = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  margin: -1rem;
 
   svg {
     color: #e76316;
@@ -36,18 +47,25 @@ export const ContainerImg = styled.div`
   margin: 3.12rem auto 1.56rem auto;
 
   svg {
+    font-size: 4.25rem;
     color: #db2525;
-    font-size: 5rem;
   }
 `;
 
 export const ContainerButton = styled.div`
+  display: flex;
+  max-width: 23rem;
+  margin: 0 auto;
+  justify-content: space-between;
+
   button {
+    border-top: 1px solid #e4e4e4;
     font-size: 1.12rem;
+    width: 10.5rem;
+    height: 3rem;
     font-weight: bold;
     color: white;
     border: none;
-    padding: 0.75rem 3.37rem;
     background: #db2525;
     border-radius: 8px;
     margin: 3.18rem auto 2.06rem auto;
