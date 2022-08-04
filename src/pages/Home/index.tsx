@@ -1,4 +1,5 @@
-import { AddCard } from "../../components/AddCard";
+import { ExcluirCard } from "../../components/ExcluirCard";
+
 import { Header } from "../../components/Header";
 import { CardList, MainContainer } from "./style";
 
@@ -12,7 +13,7 @@ export function Home() {
           <button>Novo Card</button>
         </div>
         <CardList>
-          <AddCard />
+          <ExcluirCard />
         </CardList>
       </MainContainer>
     </>
