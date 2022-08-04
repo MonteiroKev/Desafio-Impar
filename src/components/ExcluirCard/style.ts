@@ -28,7 +28,7 @@ export const ContainerExclude = styled.div`
 export const ContainerClose = styled.div`
   display: flex;
   justify-content: flex-end;
-  margin: -1rem;
+  margin: -1.5rem;
 
   svg {
     color: #e76316;

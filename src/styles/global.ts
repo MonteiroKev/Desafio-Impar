@@ -37,20 +37,17 @@ body,input,textarea,button {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom:0 ;
     background-color: rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .react-modal-content{
-    background: #F3F3F3;
-    position: relative;
-    height: 673px;
+  .react-modal-content{    
+    position: relative;    
     width: 100%;
-    max-width: 659px;
-    padding: 0 4rem;
+    max-width: 438px;    
     border-radius: 15px;
   }
 `;
