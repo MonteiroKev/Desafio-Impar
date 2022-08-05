@@ -9,17 +9,33 @@ export const MainContainer = styled.main`
   justify-content: center;
 
   .titulo-principal {
+    @media (max-width: 720px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     display: flex;
     justify-content: space-between;
     width: 100%;
 
     h1 {
+      @media (max-width: 720px) {
+        font-size: 2rem;
+        align-self: center;
+        margin: 1rem;
+      }
+
       font-size: 2rem;
       color: #5f1478;
       align-self: flex-end;
     }
 
     button {
+      @media (max-width: 720px) {
+        margin: 0;
+      }
+
       background: #e76316;
       border: none;
       color: white;

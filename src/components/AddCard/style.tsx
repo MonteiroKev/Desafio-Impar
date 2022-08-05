@@ -82,6 +82,10 @@ export const ContainerIncludeImg = styled.div`
   }
 
   label {
+    @media (max-width: 720px) {
+      margin: 0 auto;
+      padding: 0.2rem;
+    }
     border-radius: 8px;
     padding: 0.75rem 2.5rem;
     border: 1px solid #e76316;

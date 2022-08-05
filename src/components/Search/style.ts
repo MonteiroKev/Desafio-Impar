@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import background from "../../assets/fundo-busca.png";
 
-
-
 export const SearchSty = styled.div`
   background: url(${background});
   background-size: cover;
@@ -15,6 +13,10 @@ export const SearchSty = styled.div`
   justify-content: center;
 
   .wrapper-input {
+    @media (max-width: 720px) {
+      max-width: 22rem;
+    }
+
     width: 65.37rem;
     display: flex;
     align-items: center;
@@ -24,6 +26,9 @@ export const SearchSty = styled.div`
   }
 
   input {
+    @media (max-width: 720px) {
+      padding: 0;
+    }
     width: 92%;
     font-size: 1.5rem;
     padding: 1.43rem 0;

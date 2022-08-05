@@ -18,8 +18,8 @@ export function Home() {
             <h1>Resultado de busca</h1>
             <button onClick={() => setIsOpenAdd(true)}>Novo Card</button>
           </div>
-          <CardList>
-            {Array(20)
+          <CardList>  
+            {Array(8)
               .fill(undefined)
               .map((card) => (
                 <Card />

@@ -1,6 +1,14 @@
 import styled from "styled-components";
 
 export const CardContainer = styled.div`
+  @media (max-width: 720px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem auto;
+    max-width: 16rem;
+  }
+
   width: 100%;
   max-width: 14.62rem;
   text-align: center;
