@@ -6,7 +6,8 @@ import { Search } from "../../components/Search";
 import { CardList, Content, MainContainer } from "./style";
 
 export function Home() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [IsOpenAdd, setIsOpenAdd] = useState(false);
+
   return (
     <>
       <Header />
@@ -15,7 +16,7 @@ export function Home() {
         <Content>
           <div className=" titulo-principal">
             <h1>Resultado de busca</h1>
-            <button onClick={() => setIsOpen(true)}>Novo Card</button>
+            <button onClick={() => setIsOpenAdd(true)}>Novo Card</button>
           </div>
           <CardList>
             {Array(8)
@@ -26,7 +27,10 @@ export function Home() {
           </CardList>
         </Content>
       </MainContainer>
-      <CardModalAdd setIsOpen={() => setIsOpen(false)} isOpen={isOpen} />
+      <CardModalAdd
+        setIsOpenAdd={() => setIsOpenAdd(false)}
+        IsOpenAdd={IsOpenAdd}
+      />
     </>
   );
 }

@@ -1,5 +1,5 @@
 import Modal from "react-modal";
-import { ExcludeCard } from "../ExcluirCard";
+import { ExcludeCard } from "../ExcludeCard";
 
 interface CardModalProps {
   isOpen: boolean;

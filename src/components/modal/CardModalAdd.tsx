@@ -4,8 +4,8 @@ import styled from "styled-components";
 import { AddCard } from "../AddCard";
 
 interface CardModalAddProps {
-  isOpen: boolean;
-  setIsOpen: () => void;
+  IsOpenAdd: boolean;
+  setIsOpenAdd: () => void;
 }
 
 const MotionContainer = styled(motion.div)`
@@ -17,19 +17,22 @@ const MotionContainer = styled(motion.div)`
   width: 100%;
 `;
 
-export const CardModalAdd = ({ isOpen, setIsOpen }: CardModalAddProps) => {
+export const CardModalAdd = ({
+  IsOpenAdd,
+  setIsOpenAdd,
+}: CardModalAddProps) => {
   Modal.setAppElement("body");
 
   return (
     <>
       <Modal
-        isOpen={isOpen}
-        onRequestClose={setIsOpen}
-        overlayClassName="react-modal-overlay-add"
+        isOpen={IsOpenAdd}
+        onRequestClose={setIsOpenAdd}
+        // overlayClassName="react-modal-overlay-add"
         className="react-modal-content-add"
       >
         <MotionContainer
-          initial={{ x: 600, opacity: 0 }}
+          initial={{ x: 2000, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           exit={{ x: 0, opacity: 0 }}
           transition={{
@@ -37,7 +40,9 @@ export const CardModalAdd = ({ isOpen, setIsOpen }: CardModalAddProps) => {
             ease: "easeIn",
           }}
         >
-          <AddCard />
+          <div className="react-modal-overlay-add">
+            <AddCard />
+          </div>
         </MotionContainer>
       </Modal>
     </>

@@ -1,12 +1,12 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-
   *{
     margin: 0;
     padding:0;
     box-sizing: border-box;
-  }
+}   
+
 
   :focus {
     outline:0;   
@@ -56,6 +56,10 @@ export const GlobalStyle = createGlobalStyle`
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .ReactModal__Overlay.ReactModal__Overlay--after-open{
+    background-color:transparent!important;
   }
 
   
