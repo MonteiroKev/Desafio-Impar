@@ -4,14 +4,14 @@ export const ContainerNewCard = styled.div`
   width: 100%;
   height: 100%;
   max-width: 40.12rem;
-  max-height: 47.81rem;
+
   display: flex;
   flex-direction: column;
   background: white;
   padding: 2.56rem 2.18rem;
   position: absolute;
   top: 0;
-  right: 29rem;
+  right: 0rem;
 
   header {
     display: flex;

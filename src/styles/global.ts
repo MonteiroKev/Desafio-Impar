@@ -27,13 +27,14 @@ body,input,textarea,button {
     font-size:1rem;
     
 }
+
 .react-modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom:0 ;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #F6F4F6CC ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,4 +46,18 @@ body,input,textarea,button {
     max-width: 438px;    
     border-radius: 15px;
   }
+
+  .react-modal-overlay-add{
+    position: fixed;
+    width: 100%;
+    top: 0;    
+    right: 0;
+    bottom:0 ;
+    background-color: #F6F4F6CC ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
 `;
