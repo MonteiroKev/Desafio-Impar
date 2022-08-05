@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import background from "../../assets/fundo-busca.png";
 
+
+
 export const SearchSty = styled.div`
   background: url(${background});
   background-size: cover;

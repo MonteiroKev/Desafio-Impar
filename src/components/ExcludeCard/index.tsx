@@ -25,7 +25,7 @@ export function ExcludeCard({ setIsOpen }:ExcludeCardProps) {
       <p>CERTEZA QUE DESEJA EXCLUIR?</p>
       <ContainerButton>
         <button>Excluir</button>
-        <button>Cancelar</button>
+        <button onClick={setIsOpen}>Cancelar</button>
       </ContainerButton>
     </ContainerExclude>
   );
