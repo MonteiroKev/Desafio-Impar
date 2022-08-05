@@ -7,17 +7,7 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
 }
 
-/* Utilitários */
 
-.flex {
-    display:flex;
-}
-
-.align-center{
-    align-items:center ;
-}
-
-/* Utilitários */
 :focus {
     outline:0;   
 }
@@ -27,10 +17,15 @@ body{
     background: #F6F4F6;
 }
 
+button {
+    cursor: pointer;
+}
+
 body,input,textarea,button {
     font-family: 'Mulish', sans-serif;
     font-weight: 400;
     font-size:1rem;
+    
 }
 .react-modal-overlay {
     position: fixed;
