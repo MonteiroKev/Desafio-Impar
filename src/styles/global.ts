@@ -5,7 +5,11 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding:0;
     box-sizing: border-box;
-}   
+}  
+
+#root {
+  overflow-x: hidden;
+}
 
 
   :focus {
@@ -44,23 +48,10 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
     max-width: 438px;    
     border-radius: 15px;
+    background-color: #fff;
   }
 
-  .react-modal-overlay-add{
-    position: fixed;
-    width: 100%;
-    top: 0;    
-    right: 0;
-    bottom:0 ;
-    background-color: #F6F4F6CC ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .ReactModal__Overlay.ReactModal__Overlay--after-open{
+  .ReactModal__Overlay.ReactModal__Overlay--after-open .teste{
     background-color:transparent!important;
-  }
-
-  
+  }  
 `;

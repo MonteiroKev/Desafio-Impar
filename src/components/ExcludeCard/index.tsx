@@ -3,17 +3,21 @@ import {
   ContainerButton,
   ContainerClose,
   ContainerExclude,
-  ContainerImg,
+  ContainerImg
 } from "./style";
 
-export function ExcludeCard() {
+interface ExcludeCardProps {
+  setIsOpen: () => void;
+}
+
+export function ExcludeCard({ setIsOpen }:ExcludeCardProps) {
   return (
     <ContainerExclude>
-      <ContainerClose>
+      <ContainerClose onClick={setIsOpen}>
         <XCircle size={50} weight="fill" />
       </ContainerClose>
 
-      <ContainerImg>
+      <ContainerImg >
         <Trash />
       </ContainerImg>
 

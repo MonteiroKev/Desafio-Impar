@@ -18,7 +18,7 @@ export const CardModalClose = ({ isOpen, setIsOpen }: CardModalProps) => {
         className="react-modal-content"
         contentLabel="Example Modal"
       >
-        <ExcludeCard />
+        <ExcludeCard setIsOpen={setIsOpen}/>
       </Modal>
     </>
   );

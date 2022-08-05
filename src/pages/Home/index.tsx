@@ -19,7 +19,7 @@ export function Home() {
             <button onClick={() => setIsOpenAdd(true)}>Novo Card</button>
           </div>
           <CardList>
-            {Array(8)
+            {Array(20)
               .fill(undefined)
               .map((card) => (
                 <Card />

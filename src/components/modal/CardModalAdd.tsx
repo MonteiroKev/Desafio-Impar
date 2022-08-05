@@ -15,6 +15,8 @@ const MotionContainer = styled(motion.div)`
   bottom: 0;
   height: 100%;
   width: 100%;
+  background-color: #f6f4f6cc;
+  cursor: pointer;
 `;
 
 export const CardModalAdd = ({
@@ -28,21 +30,20 @@ export const CardModalAdd = ({
       <Modal
         isOpen={IsOpenAdd}
         onRequestClose={setIsOpenAdd}
-        // overlayClassName="react-modal-overlay-add"
+        overlayClassName="teste"
         className="react-modal-content-add"
       >
         <MotionContainer
-          initial={{ x: 2000, opacity: 0 }}
+          onClick={setIsOpenAdd}
+          initial={{ x: 4000, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          exit={{ x: 0, opacity: 0 }}
+          exit={{ x: -400, opacity: 0.5 }}
           transition={{
-            duration: 0.3,
+            duration: 0.4,
             ease: "easeIn",
           }}
         >
-          <div className="react-modal-overlay-add">
-            <AddCard />
-          </div>
+          <AddCard />
         </MotionContainer>
       </Modal>
     </>
