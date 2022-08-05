@@ -1,32 +1,31 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-*{
+
+  *{
     margin: 0;
     padding:0;
     box-sizing: border-box;
-}
+  }
 
-
-:focus {
+  :focus {
     outline:0;   
-}
+  }
 
-body{   
+  body{   
     -webkit-font-smoothing:antialiased;
     background: #F6F4F6;
-}
+  }
 
-button {
+  button {
     cursor: pointer;
-}
+  }
 
-body,input,textarea,button {
+  body,input,textarea,button {
     font-family: 'Mulish', sans-serif;
     font-weight: 400;
-    font-size:1rem;
-    
-}
+    font-size:1rem;    
+  }  
 
 .react-modal-overlay {
     position: fixed;

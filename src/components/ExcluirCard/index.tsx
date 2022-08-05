@@ -3,14 +3,14 @@ import {
   ContainerButton,
   ContainerClose,
   ContainerExclude,
-  ContainerImg
+  ContainerImg,
 } from "./style";
 
-export function ExcluirCard() {
+export function ExcludeCard() {
   return (
     <ContainerExclude>
       <ContainerClose>
-        <XCircle size={45} weight="fill" />
+        <XCircle size={50} weight="fill" />
       </ContainerClose>
 
       <ContainerImg>

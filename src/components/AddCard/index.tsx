@@ -1,8 +1,8 @@
 import addImgIcon from "../../assets/icone_criar.png";
 import {
   ContainerButton,
-  ContainerIncluirImg,
-  ContainerNewCard
+  ContainerIncludeImg,
+  ContainerNewCard,
 } from "./style";
 
 export function AddCard() {
@@ -18,7 +18,7 @@ export function AddCard() {
           <p>DIGITE UM NOME PARA O CARD</p>
           <input type="text" placeholder="Digite o título" />
           <p>INCLUA UMA IMAGEM PARA APARECER NO CARD</p>
-          <ContainerIncluirImg>
+          <ContainerIncludeImg>
             Nenhum arquivo selecionado
             <label htmlFor="arquivo">
               Escolher arquivo
@@ -28,7 +28,7 @@ export function AddCard() {
                 placeholder="Nenhum arquivo selecionado"
               />
             </label>
-          </ContainerIncluirImg>
+          </ContainerIncludeImg>
         </form>
 
         <ContainerButton>

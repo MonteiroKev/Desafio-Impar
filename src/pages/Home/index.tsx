@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Card } from "../../components/Card";
 import { Header } from "../../components/Header";
-import { CardModalAdicionar } from "../../components/modal/CardModalAdicionar";
+import { CardModalAdd } from "../../components/modal/CardModalAdd";
 import { Search } from "../../components/Search";
-import { CardList, Content, MainContainer, MotionContainer } from "./style";
+import { CardList, Content, MainContainer } from "./style";
 
 export function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,26 +17,16 @@ export function Home() {
             <h1>Resultado de busca</h1>
             <button onClick={() => setIsOpen(true)}>Novo Card</button>
           </div>
-          <MotionContainer
-            initial={{ x: 300, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            exit={{ x: 0, opacity: 0 }}
-            transition={{
-              duration: 0.7,
-              ease: "easeIn",
-            }}
-          >
-            <CardList>
-              {Array(8)
-                .fill(undefined)
-                .map((card) => (
-                  <Card />
-                ))}
-            </CardList>
-          </MotionContainer>
+          <CardList>
+            {Array(8)
+              .fill(undefined)
+              .map((card) => (
+                <Card />
+              ))}
+          </CardList>
         </Content>
       </MainContainer>
-      <CardModalAdicionar setIsOpen={() => setIsOpen(false)} isOpen={isOpen} />
+      <CardModalAdd setIsOpen={() => setIsOpen(false)} isOpen={isOpen} />
     </>
   );
 }

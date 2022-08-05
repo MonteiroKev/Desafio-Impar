@@ -1,12 +1,12 @@
 import Modal from "react-modal";
-import { ExcluirCard } from "../ExcluirCard";
+import { ExcludeCard } from "../ExcluirCard";
 
 interface CardModalProps {
   isOpen: boolean;
   setIsOpen: () => void;
 }
 
-export const CardModalExcluir = ({ isOpen, setIsOpen }: CardModalProps) => {
+export const CardModalClose = ({ isOpen, setIsOpen }: CardModalProps) => {
   Modal.setAppElement("body");
 
   return (
@@ -18,7 +18,7 @@ export const CardModalExcluir = ({ isOpen, setIsOpen }: CardModalProps) => {
         className="react-modal-content"
         contentLabel="Example Modal"
       >
-        <ExcluirCard />
+        <ExcludeCard />
       </Modal>
     </>
   );

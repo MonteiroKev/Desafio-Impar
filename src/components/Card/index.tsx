@@ -1,7 +1,7 @@
 import { PencilSimple, Trash } from "phosphor-react";
 import { useState } from "react";
 import imagemCard from "../../assets/icone.svg";
-import { CardModalExcluir } from "../modal/CardModalExcluir";
+import { CardModalClose } from "../modal/CardModalClose";
 import { ButtonContainer, CardContainer, ImageContainer } from "./style";
 
 export function Card() {
@@ -24,7 +24,7 @@ export function Card() {
           </button>
         </ButtonContainer>
       </CardContainer>
-      <CardModalExcluir setIsOpen={() => setIsOpen(false)} isOpen={isOpen} />
+      <CardModalClose setIsOpen={() => setIsOpen(false)} isOpen={isOpen} />
     </>
   );
 }

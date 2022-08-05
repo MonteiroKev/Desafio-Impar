@@ -3,7 +3,7 @@ import Modal from "react-modal";
 import styled from "styled-components";
 import { AddCard } from "../AddCard";
 
-interface CardModalAdicionarProps {
+interface CardModalAddProps {
   isOpen: boolean;
   setIsOpen: () => void;
 }
@@ -17,10 +17,7 @@ const MotionContainer = styled(motion.div)`
   width: 100%;
 `;
 
-export const CardModalAdicionar = ({
-  isOpen,
-  setIsOpen,
-}: CardModalAdicionarProps) => {
+export const CardModalAdd = ({ isOpen, setIsOpen }: CardModalAddProps) => {
   Modal.setAppElement("body");
 
   return (

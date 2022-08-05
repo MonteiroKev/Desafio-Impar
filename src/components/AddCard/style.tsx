@@ -63,10 +63,15 @@ export const ContainerNewCard = styled.div`
     font-size: 1.12rem;
     font-weight: bold;
     box-shadow: 0px 3px 6px #92207242;
+
+    &:hover {
+      background: #fa5e04;
+      transition: 0.5s;
+    }
   }
 `;
 
-export const ContainerIncluirImg = styled.div`
+export const ContainerIncludeImg = styled.div`
   border: 1px solid #b9b9b9;
   padding: 1.18rem 0 1.18rem 1.56rem;
   border-radius: 8px;
@@ -85,6 +90,12 @@ export const ContainerIncluirImg = styled.div`
     color: #e76316;
     margin: 0 0 0 4.9rem;
     cursor: pointer;
+
+    &:hover {
+      background: #e76316;
+      color: white;
+      transition: 0.3s;
+    }
   }
 `;
 

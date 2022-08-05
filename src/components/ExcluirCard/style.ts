@@ -28,10 +28,16 @@ export const ContainerExclude = styled.div`
 export const ContainerClose = styled.div`
   display: flex;
   justify-content: flex-end;
-  margin: -1.5rem;
 
   svg {
     color: #e76316;
+    position: absolute;
+    margin: -1.2rem;
+    cursor: pointer;
+
+    &:hover {
+      color: #db2525;
+    }
   }
 `;
 
@@ -60,15 +66,25 @@ export const ContainerButton = styled.div`
 
   button {
     border-top: 1px solid #e4e4e4;
+    background: white;
     font-size: 1.12rem;
     width: 10.5rem;
     height: 3rem;
     font-weight: bold;
-    color: white;
-    border: none;
-    background: #db2525;
+    color: #db2525;
+    border: 1px solid #db2525;
     border-radius: 8px;
     margin: 3.18rem auto 2.06rem auto;
-    box-shadow: 0px 3px 6px #92207242;
+
+    &:hover {
+      background: #db2525;
+      color: white;
+      transition: 0.5s;
+    }
+
+    &:focus {
+      background: #db2525;
+      color: white;
+    }
   }
 `;
