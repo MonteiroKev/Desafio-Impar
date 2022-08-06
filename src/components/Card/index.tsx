@@ -15,7 +15,7 @@ export function Card(props: PropsPokemon) {
 
   let id_imagem = props.url.split("/pokemon/")[1].split("/")[0];
   let imagem = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id_imagem}.png`;
-  
+
   return (
     <>
       <CardContainer>

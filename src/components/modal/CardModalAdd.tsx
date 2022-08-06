@@ -9,7 +9,7 @@ interface CardModalAddProps {
 }
 
 const MotionContainer = styled(motion.div)`
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
@@ -31,7 +31,7 @@ export const CardModalAdd = ({
         isOpen={IsOpenAdd}
         onRequestClose={setIsOpenAdd}
         overlayClassName="teste"
-        className="react-modal-content-add"
+        className="react-modal-content"
       >
         <MotionContainer
           onClick={setIsOpenAdd}

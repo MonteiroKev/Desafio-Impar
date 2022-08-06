@@ -5,12 +5,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding:0;
     box-sizing: border-box;
-}  
-
-#root {
-  overflow-x: hidden;
-}
-
+  }
 
   :focus {
     outline:0;   
@@ -30,7 +25,7 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     font-size:1rem; 
     overflow-x:hidden;   
-  }  
+  }
 
 .react-modal-overlay {
     position: fixed;

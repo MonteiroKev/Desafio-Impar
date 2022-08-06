@@ -1,3 +1,4 @@
+import { toast } from "react-toastify";
 import addImgIcon from "../../assets/icone_criar.png";
 import {
   ContainerButton,
@@ -6,6 +7,9 @@ import {
 } from "./style";
 
 export function AddCard() {
+  function handleNotification() {
+    toast.error("Funcionalidade não foi aplicada");
+  }
   return (
     <>
       <ContainerNewCard>
@@ -32,7 +36,7 @@ export function AddCard() {
         </form>
 
         <ContainerButton>
-          <button>Criar Card</button>
+          <button onClick={handleNotification}>Criar Card</button>
         </ContainerButton>
       </ContainerNewCard>
     </>

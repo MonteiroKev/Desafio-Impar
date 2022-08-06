@@ -22,9 +22,11 @@ export function Home() {
     );
     return response.data.results;
   });
+
   let filteredData = search
     ? data?.filter((item) => item.name.includes(search))
     : data;
+
   return (
     <>
       <Header />
