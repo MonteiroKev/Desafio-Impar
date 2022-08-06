@@ -1,19 +1,26 @@
 import { PencilSimple, Trash } from "phosphor-react";
 import { useState } from "react";
-import imagemCard from "../../assets/icone.svg";
 import { CardModalAdd } from "../modal/CardModalAdd";
 import { CardModalClose } from "../modal/CardModalClose";
 import { ButtonContainer, CardContainer, ImageContainer } from "./style";
 
-export function Card() {
+
+type PropsPokemon = {
+  name: string;
+  url: string;
+};
+
+export function Card(props: PropsPokemon) {
   const [isOpen, setIsOpen] = useState(false);
   const [IsOpenAdd, setIsOpenAdd] = useState(false);
+  let id_imagem = props.url.split("/pokemon/")[1].split("/")[0];
+  let imagem = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id_imagem}.png`;
   return (
     <>
       <CardContainer>
         <ImageContainer>
-          <img src={imagemCard} alt="" />
-          <p>Lorem ipsum dolor sit amet consectetur </p>
+          <img src={imagem} alt="" />
+          <p>{props.name}</p>
         </ImageContainer>
         <ButtonContainer>
           <button onClick={() => setIsOpen(true)}>
