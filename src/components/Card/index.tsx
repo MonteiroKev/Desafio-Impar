@@ -4,7 +4,6 @@ import { CardModalAdd } from "../modal/CardModalAdd";
 import { CardModalClose } from "../modal/CardModalClose";
 import { ButtonContainer, CardContainer, ImageContainer } from "./style";
 
-
 type PropsPokemon = {
   name: string;
   url: string;
@@ -13,8 +12,10 @@ type PropsPokemon = {
 export function Card(props: PropsPokemon) {
   const [isOpen, setIsOpen] = useState(false);
   const [IsOpenAdd, setIsOpenAdd] = useState(false);
+
   let id_imagem = props.url.split("/pokemon/")[1].split("/")[0];
   let imagem = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id_imagem}.png`;
+  
   return (
     <>
       <CardContainer>

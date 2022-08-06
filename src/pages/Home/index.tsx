@@ -13,6 +13,7 @@ type Pokemon = {
 };
 
 export function Home() {
+  const [search, setSearch] = useState("");
   const [IsOpenAdd, setIsOpenAdd] = useState(false);
 
   const { data } = useQuery<Pokemon[]>(["pokemon"], async () => {
@@ -21,19 +22,21 @@ export function Home() {
     );
     return response.data.results;
   });
-
+  let filteredData = search
+    ? data?.filter((item) => item.name.includes(search))
+    : data;
   return (
     <>
       <Header />
       <MainContainer>
-        <Search />
+        <Search search={search} setSearch={setSearch} />
         <Content>
           <div className=" titulo-principal">
             <h1>Resultado de busca</h1>
             <button onClick={() => setIsOpenAdd(true)}>Novo Card</button>
           </div>
           <CardList>
-            {data?.map((pokemon: Pokemon) => {
+            {filteredData?.map((pokemon: Pokemon) => {
               return (
                 <Card
                   key={pokemon.name}
