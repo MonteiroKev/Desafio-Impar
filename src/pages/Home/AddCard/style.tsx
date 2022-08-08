@@ -1,17 +1,11 @@
 import styled from "styled-components";
 
 export const ContainerNewCard = styled.div`
-  width: 100%;
-  height: 100%;
+  height: 100vh;
   max-width: 40.12rem;
-
-  display: flex;
   flex-direction: column;
   background: white;
   padding: 2.56rem 2.18rem;
-  position: absolute;
-  top: 0;
-  right: 0rem;
 
   header {
     display: flex;
@@ -86,6 +80,7 @@ export const ContainerIncludeImg = styled.div`
       margin: 0 auto;
       padding: 0.2rem;
     }
+
     border-radius: 8px;
     padding: 0.75rem 2.5rem;
     border: 1px solid #e76316;
