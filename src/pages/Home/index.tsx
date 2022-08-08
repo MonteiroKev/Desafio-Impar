@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Card } from "../../components/Card";
 import { Header } from "../../components/Header";
 import { CardModalAdd } from "../../components/Modal/CardModalAdd";
+
 import { Search } from "../../components/Search";
 
 import { CardList, Content, MainContainer, MotionContainer } from "./style";
