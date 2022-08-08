@@ -16,7 +16,7 @@ React-toastify
 Instalação
 Para iniciar o projeto, primeiro precisa instalar as dependências para isso rode o comando abaixo:
 
-npm instal
+npm install
 
 Com as dependencias instaladas, agora precisa inicializar o projeto em desenvolvimento, para isso execute o comando:
 
