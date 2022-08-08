@@ -1,7 +1,7 @@
 import { PencilSimple, Trash } from "phosphor-react";
 import { useState } from "react";
-import { CardModalAdd } from "../modal/CardModalAdd";
-import { CardModalClose } from "../modal/CardModalClose";
+import { CardModalAdd } from "../Modal/CardModalAdd";
+import { CardModalClose } from "../Modal/CardModalClose";
 import { ButtonContainer, CardContainer, ImageContainer } from "./style";
 
 type PropsPokemon = {
