@@ -1,11 +1,23 @@
-# Desafio-Impar
+Frontend
 
-Aplicação criada para o Desafio Impar!
-Sendo desenvolvida em Typescript, Reactjs, styled-components.
+Tecnologias utilizadas:
 
+ReactJS
+HTML
+CSS com Styled Components
+Prettier (Padronização de código)
+Typescript
+Axios (Comunicação com a API)
+React-query
+Framer-motion
+Phosphor-react
+React-toastify
 
-## Abra o projeto no seu editor de codigos e instale as dependencias através do comando:
-npm install
+Instalação
+Para iniciar o projeto, primeiro precisa instalar as dependências para isso rode o comando abaixo:
 
-##Para rodar o projeto e ver a aplicação rodando:
+npm instal
+
+Com as dependencias instaladas, agora precisa inicializar o projeto em desenvolvimento, para isso execute o comando:
+
 npm run dev
