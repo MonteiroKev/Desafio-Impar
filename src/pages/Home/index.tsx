@@ -5,7 +5,8 @@ import { Card } from "../../components/Card";
 import { Header } from "../../components/Header";
 import { CardModalAdd } from "../../components/Modal/CardModalAdd";
 import { Search } from "../../components/Search";
-import { CardList, Content, MainContainer } from "./style";
+
+import { CardList, Content, MainContainer, MotionContainer } from "./style";
 
 type Pokemon = {
   name: string;
@@ -40,11 +41,21 @@ export function Home() {
           <CardList>
             {filteredData?.map((pokemon: Pokemon) => {
               return (
-                <Card
-                  key={pokemon.name}
-                  name={pokemon.name}
-                  url={pokemon.url}
-                />
+                <MotionContainer
+                  initial={{ x: 100, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  exit={{ x: 0, opacity: 0.6 }}
+                  transition={{
+                    duration: 0.6,
+                    ease: "easeIn",
+                  }}
+                >
+                  <Card
+                    key={pokemon.name}
+                    name={pokemon.name}
+                    url={pokemon.url}
+                  />
+                </MotionContainer>
               );
             })}
           </CardList>

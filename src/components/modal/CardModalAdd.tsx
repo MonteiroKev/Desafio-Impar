@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Modal from "react-modal";
 import styled from "styled-components";
-import { AddCard } from "../AddCard";
+import { AddCard } from "../../pages/Home/AddCard";
 
 interface CardModalAddProps {
   IsOpenAdd: boolean;
@@ -10,10 +10,10 @@ interface CardModalAddProps {
 
 const MotionContainer = styled(motion.div)`
   position: fixed;
+  display: flex;
+  justify-content: end;
   top: 0;
-  left: 0;
-  bottom: 0;
-  height: 100%;
+  right: 0;
   width: 100%;
   background-color: #f6f4f6cc;
   cursor: pointer;
@@ -37,9 +37,9 @@ export const CardModalAdd = ({
           onClick={setIsOpenAdd}
           initial={{ x: 4000, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          exit={{ x: -400, opacity: 0.5 }}
+          exit={{ x: -4000, opacity: 0.5 }}
           transition={{
-            duration: 0.4,
+            duration: 0.6,
             ease: "easeIn",
           }}
         >
