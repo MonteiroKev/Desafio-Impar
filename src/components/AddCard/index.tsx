@@ -3,7 +3,7 @@ import addImgIcon from "../../assets/icone_criar.png";
 import {
   ContainerButton,
   ContainerIncludeImg,
-  ContainerNewCard,
+  ContainerNewCard
 } from "./style";
 
 export function AddCard() {
